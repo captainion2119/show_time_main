@@ -188,13 +188,13 @@
                 additionalInfo: additionalInfo  // Additional scary info
             };
 
-            fetch('http://127.0.0.1:5000/api/register', {
+            fetch('https://hashvault-backend.onrender.com/api/register', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)
             }).then(response => {
                 if (response.ok) {
-                    window.location.href = 'thank-you.html';
+                    window.location.href = 'https://hashvault-backend.onrender.com/thank-you';
                 }
             });
         });
